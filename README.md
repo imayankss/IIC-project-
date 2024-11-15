@@ -123,4 +123,4 @@ Connect an Android device to the development computer via USB, then allow USB de
 
 Select Run → Select Device, and select the connected device. 
 
-Select Run → Run 'app' to install and run the AutoSight app on the connected Android phone. The app will remain installed on the device after it is disconnected.
+Select Run → Run 'app' to install and run the AutoSight app on the connected Android phone. The app will remain installed on the device after it is disconnected..
