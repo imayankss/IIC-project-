@@ -103,4 +103,24 @@ Start the development server:
 npm start
 ```
 
-The AutoSight web application viewable by browsing to the default server address `http://localhost:3000`.
+The AutoSight web application is viewable by browsing to the default server address `http://localhost:3000`.
+
+## Android App
+Open Android Studio, select File → Open, select the `android_app/AutoSight` directory from the `autosight` cloned repository. 
+
+In the upper left corner of the Project tool window, click the 'Project' dropdown menu, and select 'Android' from the options. 
+
+Open the `AppConfig` file within the code editor by double clicking it in the file tree: app/kotlin+java/com.example.autosight/AppConfig
+
+Update the following placeholder values in `AppConfig`, and save the file when complete: 
+- `IMAGE_SERVER_ADDRESS`: Public URL of image server (ex. `http://<public-ip>:5050`)
+- `METAGRAPH_L0_ADDRESS`: Public URL of metagraph L0 layer (ex. `http://<public-ip>:9200`)
+- `METAGRAPH_DATA_L1_ADDRESS`: Public URL of metagraph Data L1 layer (ex. `http://<public-ip>:9400`)
+
+Synch the project by selecting File → Sync Project with Gradle Files. Then, build the project by selecting Build → Make Project. 
+
+Connect an Android device to the development computer via USB, then allow USB debugging on the phone when prompted. 
+
+Select Run → Select Device, and select the connected device. 
+
+Select Run → Run 'app' to install and run the AutoSight app on the connected Android phone. The app will remain installed on the device after it is disconnected.
